@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0129)file:///C:/Users/Saudi%20Gamerz/%D8%B3%D9%83%D8%B1%D8%A8%D8%AA%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%85%D8%A7%D9%84/index.html/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 300px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .error {
+        color: red;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>تسجيل الدخول</h2>
+    <form action="file:///C:/Users/Saudi%20Gamerz/%D8%B3%D9%83%D8%B1%D8%A8%D8%AA%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%85%D8%A7%D9%84/index.html/index.html#" method="post">
+        <div class="error"></div>
+        <label for="username">اسم المستخدم:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">كلمة المرور:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="تسجيل الدخول">
+    </form>
+</div>
+<script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username === "abdullah" && password === "13771377") {
+            window.location.href = "dashboard.html"; // توجيه المستخدم إلى صفحة اللوحة الرئيسية بعد تسجيل الدخول بنجاح
+        } else {
+            document.querySelector(".error").textContent = "اسم المستخدم أو كلمة المرور غير صحيحة.";
+        }
+    });
+</script>
+
+
+</body></html>
